@@ -35,8 +35,8 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 const PersonalInfoComponent = (props) => {
   const [loading, setLoading] = useState(false);
   const [imgSnackbar, setImgSnackbar] = useState(false);
-  const [vertical, setVertical] = useState("top");
-  const [horizontal, setHorizontal] = useState("center");
+  // const [vertical, setVertical] = useState("top");
+  // const [horizontal, setHorizontal] = useState("center");
 
   const {
     register,
@@ -47,7 +47,7 @@ const PersonalInfoComponent = (props) => {
   const [img, setImg] = useState(
     props.personalInfo.profileImg.length ? props.personalInfo.profileImg : ""
   );
-  const [sotreImage, setSotreImage] = useState([]);
+  // const [sotreImage, setSotreImage] = useState([]);
 
   const [open, setOpen] = useState(false);
 
@@ -105,7 +105,7 @@ const PersonalInfoComponent = (props) => {
   };
 
   const saveImage = () => {
-    setSotreImage([{ img }]);
+    // setSotreImage([{ img }]);
     // props.onSetProfileImage(img);
     setOpen(false);
   };
@@ -339,12 +339,12 @@ const PersonalInfoComponent = (props) => {
         />
       </form>
       <Snackbar
-        anchorOrigin={{ vertical, horizontal }}
+        // anchorOrigin={{ vertical, horizontal }}
         open={imgSnackbar}
         autoHideDuration={3000}
         onClose={handleCloseSnackbar}
         message="Please select a profile image"
-        key={vertical + horizontal}
+        // key={vertical + horizontal}
       />
     </Paper>
   );

@@ -1,5 +1,5 @@
-import templateOneImg from "../Images/resume-one.jpg";
-import templateTwoImg from "../Images/resume-two.jpg";
+import templateOneImg from "../Images/resume_one.jpg";
+import templateTwoImg from "../Images/resume_two.jpg";
 import Template1 from "../Templates/Template1";
 import Template2 from "../Templates/Template2";
 
